@@ -1,20 +1,45 @@
-const element = <h1 className="header">This is JSX</h1>
-console.log(element);
+// JSX, 최상단에 <div></div>로 감싸져 있음
+const page = (
+    <div>
+        <h1 className="header">This is JSX</h1>
+        <p>This is a paragraph</p>
+    </div>
+)
+console.log(page);
 
 /*
-콘솔로 찍어보면 자바스크립트 오브젝트인데, 화면으로는 HTML처럼 보임.
 {
-    "type": "h1",
+    "type": "div",
     "key": null,
     "ref": null,
     "props": {
-        "className": "header",
-        "children": "This is JSX"
+        "children": [
+            {
+                "type": "h1",
+                "key": null,
+                "ref": null,
+                "props": {
+                    "className": "header",
+                    "children": "This is JSX"
+                },
+                "_owner": null,
+                "_store": {}
+            },
+            {
+                "type": "p",
+                "key": null,
+                "ref": null,
+                "props": {
+                    "children": "This is a paragraph"
+                },
+                "_owner": null,
+                "_store": {}
+            }
+        ]
     },
     "_owner": null,
     "_store": {}
 }
 */
 
-// JSX
-ReactDOM.render(element, document.getElementById("root"));
+ReactDOM.render(page, document.getElementById("root"));
