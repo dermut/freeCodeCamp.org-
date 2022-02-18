@@ -1,12 +1,12 @@
-const nav = (
-    <nav>
-        <h1>Jimin, The Monster</h1>
-        <ul>
-            <li>Pricing</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </nav>
-)
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(nav, document.getElementById("root"));
+const page = (
+    <div>
+        <h1>TEST</h1>
+        <p>test</p>
+        <footer>테스트</footer>
+    </div>
+);
+
+ReactDOM.render(page, document.getElementById("root"));
