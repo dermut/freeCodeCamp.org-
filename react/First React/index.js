@@ -1,12 +1,17 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from "react";
+import ReactDOM from "react";
 
-const page = (
-    <div>
-        <h1>TEST</h1>
-        <p>test</p>
-        <footer>테스트</footer>
-    </div>
-);
+function Page() {
+    return (
+        <div>
+            <h1>Good Night</h1>
+            <ol>
+                <li>One Night</li>
+                <li>Two Night</li>
+                <li>Three Night</li>
+            </ol>
+        </div>
+    );
+}
 
-ReactDOM.render(page, document.getElementById("root"));
+ReactDOM.render(<Page/>, document.getElementById("root"));
